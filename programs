@@ -57,22 +57,19 @@ Convert the given number of days into completed years, months, and remaining day
 year = 365 days, 1 month = 30 days.
 ans:
 import java.util.Scanner;
-
 public class ConvertDaysintoYearsMonthsDays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Enter number of days: ");
         int n = sc.nextInt();
-
         int years = n / 365;
         int leftAfterYears = n % 365;
         int months = leftAfterYears / 30;
         int daysLeft = leftAfterYears % 30;
-
         System.out.println(n + " days = " + years + " years, " 
                            + months + " months, " + daysLeft + " days");
     }
+     sc.close();
 }
 
 
